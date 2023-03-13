@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  Husqvarna
+
+  Created by Anshu Kumar Ray on 12/03/23.
+  
+*/
+"top_rated_movies" = "Top %@ Movies";
+"loading" = "Loading";
+"error_please_try_again" = "Something went wrong. Please reload the app";
+"error_try_again" = "Something went wrong. Please try again";
+"back" = "Back";
+"movie_duration" = "Duration: %@";
+"release_date" = "Release Date: %@";
+"movie_genre" = "Genres: %@";
+"movie_tagline" = "Tagline: %@";
+"terms_and_conditions" = "Terms & Conditions";
+"privacy_policy" = "Privacy Policy";
+"help_and_support" = "Help & Support";
+"settings" = "Settings";

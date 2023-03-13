@@ -1,0 +1,941 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A7D2DD596596853265240F5 /* Pods_Husqvarna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3526AAE880A245F5853D89B1 /* Pods_Husqvarna.framework */; };
+		691B219229BE3B1B0071DA69 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691B219129BE3B1B0071DA69 /* SettingsView.swift */; };
+		691B219429BE3E5E0071DA69 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691B219329BE3E5E0071DA69 /* Constants.swift */; };
+		691B219729BE432F0071DA69 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 691B219929BE432F0071DA69 /* Localizable.strings */; };
+		69A2924029B308C600898782 /* HusqvarnaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2923F29B308C600898782 /* HusqvarnaApp.swift */; };
+		69A2924229B308C600898782 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2924129B308C600898782 /* HomeView.swift */; };
+		69A2924429B308C800898782 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69A2924329B308C800898782 /* Assets.xcassets */; };
+		69A2924729B308C800898782 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69A2924629B308C800898782 /* Preview Assets.xcassets */; };
+		69A2925129B308C800898782 /* HusqvarnaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2925029B308C800898782 /* HusqvarnaTests.swift */; };
+		69A2925B29B308C800898782 /* HusqvarnaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2925A29B308C800898782 /* HusqvarnaUITests.swift */; };
+		69A2925D29B308C800898782 /* HusqvarnaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A2925C29B308C800898782 /* HusqvarnaUITestsLaunchTests.swift */; };
+		69C7F09929BCBE980036938C /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C7F09829BCBE980036938C /* MovieDetailsView.swift */; };
+		69C7F09B29BCBEB60036938C /* MovieDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C7F09A29BCBEB60036938C /* MovieDetailsViewModel.swift */; };
+		69C7F0A429BDA1E60036938C /* TopRatedMoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C7F0A329BDA1E60036938C /* TopRatedMoviesView.swift */; };
+		69C7F0A829BDA4690036938C /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C7F0A729BDA4690036938C /* AppConfiguration.swift */; };
+		69C7F0AA29BDA4A70036938C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C7F0A929BDA4A70036938C /* Configuration.swift */; };
+		69C7F0AC29BDA50B0036938C /* MovieDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C7F0AB29BDA50B0036938C /* MovieDetails.swift */; };
+		69C7F0AE29BDA5BF0036938C /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C7F0AD29BDA5BF0036938C /* MovieList.swift */; };
+		69C7F0B129BDA7000036938C /* MoviesServiceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C7F0B029BDA7000036938C /* MoviesServiceable.swift */; };
+		69C7F0B329BDA76A0036938C /* MoviesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C7F0B229BDA76A0036938C /* MoviesService.swift */; };
+		69C7F0B629BDABAF0036938C /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C7F0B529BDABAF0036938C /* AppEnvironment.swift */; };
+		69C7F0B829BDAD4F0036938C /* MovieDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C7F0B729BDAD4F0036938C /* MovieDescriptionView.swift */; };
+		69C7F0BB29BDBE960036938C /* ImageLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C7F0BA29BDBE960036938C /* ImageLoaderService.swift */; };
+		69C7F0BE29BDBF370036938C /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C7F0BD29BDBF370036938C /* RemoteImageView.swift */; };
+		69C7F0C529BDCAE60036938C /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C7F0C429BDCAE60036938C /* HomeViewModelTests.swift */; };
+		69C7F0C729BDFE130036938C /* MockMoviesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C7F0C629BDFE130036938C /* MockMoviesService.swift */; };
+		69CF08AD29B3197400D1DAF0 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF08AC29B3197400D1DAF0 /* APIEndpoints.swift */; };
+		69CF08AF29B319A400D1DAF0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF08AE29B319A400D1DAF0 /* HomeViewModel.swift */; };
+		6BA23FAF3552BC01497B108B /* libPods-HusqvarnaUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6EE9188B92CFC7B6D21697 /* libPods-HusqvarnaUITests.a */; };
+		B2A3A2A539A191893EB773ED /* libPods-HusqvarnaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E16A6048934B045D5B2A5AA /* libPods-HusqvarnaTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69A2924D29B308C800898782 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69A2923429B308C600898782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69A2923B29B308C600898782;
+			remoteInfo = Husqvarna;
+		};
+		69A2925729B308C800898782 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69A2923429B308C600898782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69A2923B29B308C600898782;
+			remoteInfo = Husqvarna;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		074F4C3D0A7B5545DE0DFD09 /* Pods-HusqvarnaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HusqvarnaUITests.release.xcconfig"; path = "Target Support Files/Pods-HusqvarnaUITests/Pods-HusqvarnaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3526AAE880A245F5853D89B1 /* Pods_Husqvarna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Husqvarna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		685AE36BDDD55B4ADECC2B4C /* Pods-HusqvarnaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HusqvarnaUITests.debug.xcconfig"; path = "Target Support Files/Pods-HusqvarnaUITests/Pods-HusqvarnaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		691B219129BE3B1B0071DA69 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		691B219329BE3E5E0071DA69 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		691B219829BE432F0071DA69 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		69A2923C29B308C600898782 /* Husqvarna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Husqvarna.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69A2923F29B308C600898782 /* HusqvarnaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HusqvarnaApp.swift; sourceTree = "<group>"; };
+		69A2924129B308C600898782 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		69A2924329B308C800898782 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69A2924629B308C800898782 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		69A2924C29B308C800898782 /* HusqvarnaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HusqvarnaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69A2925029B308C800898782 /* HusqvarnaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HusqvarnaTests.swift; sourceTree = "<group>"; };
+		69A2925629B308C800898782 /* HusqvarnaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HusqvarnaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69A2925A29B308C800898782 /* HusqvarnaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HusqvarnaUITests.swift; sourceTree = "<group>"; };
+		69A2925C29B308C800898782 /* HusqvarnaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HusqvarnaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		69C7F09829BCBE980036938C /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
+		69C7F09A29BCBEB60036938C /* MovieDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewModel.swift; sourceTree = "<group>"; };
+		69C7F0A329BDA1E60036938C /* TopRatedMoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedMoviesView.swift; sourceTree = "<group>"; };
+		69C7F0A729BDA4690036938C /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		69C7F0A929BDA4A70036938C /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		69C7F0AB29BDA50B0036938C /* MovieDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetails.swift; sourceTree = "<group>"; };
+		69C7F0AD29BDA5BF0036938C /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
+		69C7F0B029BDA7000036938C /* MoviesServiceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesServiceable.swift; sourceTree = "<group>"; };
+		69C7F0B229BDA76A0036938C /* MoviesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesService.swift; sourceTree = "<group>"; };
+		69C7F0B529BDABAF0036938C /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		69C7F0B729BDAD4F0036938C /* MovieDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDescriptionView.swift; sourceTree = "<group>"; };
+		69C7F0BA29BDBE960036938C /* ImageLoaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderService.swift; sourceTree = "<group>"; };
+		69C7F0BD29BDBF370036938C /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
+		69C7F0C429BDCAE60036938C /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		69C7F0C629BDFE130036938C /* MockMoviesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMoviesService.swift; sourceTree = "<group>"; };
+		69CF08AC29B3197400D1DAF0 /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		69CF08AE29B319A400D1DAF0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		69CF08B029B31A7900D1DAF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		71883273770A89A0003BD967 /* Pods-HusqvarnaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HusqvarnaTests.release.xcconfig"; path = "Target Support Files/Pods-HusqvarnaTests/Pods-HusqvarnaTests.release.xcconfig"; sourceTree = "<group>"; };
+		8520342EC5AC001854487849 /* Pods-Husqvarna.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Husqvarna.release.xcconfig"; path = "Target Support Files/Pods-Husqvarna/Pods-Husqvarna.release.xcconfig"; sourceTree = "<group>"; };
+		8E16A6048934B045D5B2A5AA /* libPods-HusqvarnaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HusqvarnaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C6EE9188B92CFC7B6D21697 /* libPods-HusqvarnaUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HusqvarnaUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2CE332AC341223C99E98EED /* Pods-Husqvarna-HusqvarnaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Husqvarna-HusqvarnaUITests.release.xcconfig"; path = "Target Support Files/Pods-Husqvarna-HusqvarnaUITests/Pods-Husqvarna-HusqvarnaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A60A61C47612647AEB112498 /* Pods-Husqvarna.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Husqvarna.debug.xcconfig"; path = "Target Support Files/Pods-Husqvarna/Pods-Husqvarna.debug.xcconfig"; sourceTree = "<group>"; };
+		BE4475D5FE383A2D291682E1 /* Pods-Husqvarna-HusqvarnaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Husqvarna-HusqvarnaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Husqvarna-HusqvarnaUITests/Pods-Husqvarna-HusqvarnaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C55FD6EBAFF084D5972C89B5 /* Pods-HusqvarnaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HusqvarnaTests.debug.xcconfig"; path = "Target Support Files/Pods-HusqvarnaTests/Pods-HusqvarnaTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69A2923929B308C600898782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A7D2DD596596853265240F5 /* Pods_Husqvarna.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69A2924929B308C800898782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2A3A2A539A191893EB773ED /* libPods-HusqvarnaTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69A2925329B308C800898782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BA23FAF3552BC01497B108B /* libPods-HusqvarnaUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		691B218F29BE3AF90071DA69 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				691B219029BE3B090071DA69 /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		691B219029BE3B090071DA69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				691B219129BE3B1B0071DA69 /* SettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69A2923329B308C600898782 = {
+			isa = PBXGroup;
+			children = (
+				691B219929BE432F0071DA69 /* Localizable.strings */,
+				69A2923E29B308C600898782 /* Husqvarna */,
+				69A2924F29B308C800898782 /* HusqvarnaTests */,
+				69A2925929B308C800898782 /* HusqvarnaUITests */,
+				69A2923D29B308C600898782 /* Products */,
+				7EA268F1BE1E79DBED4E1AA7 /* Pods */,
+				CD3695DC6DA80F93765AF13C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		69A2923D29B308C600898782 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69A2923C29B308C600898782 /* Husqvarna.app */,
+				69A2924C29B308C800898782 /* HusqvarnaTests.xctest */,
+				69A2925629B308C800898782 /* HusqvarnaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69A2923E29B308C600898782 /* Husqvarna */ = {
+			isa = PBXGroup;
+			children = (
+				691B218F29BE3AF90071DA69 /* Settings */,
+				69C7F0BC29BDBF060036938C /* UIComponents */,
+				69C7F0B929BDBE7D0036938C /* Helper */,
+				69C7F0B429BDAB980036938C /* Environment */,
+				69C7F0A629BDA4460036938C /* Configuration */,
+				69C7F0A229BD79BF0036938C /* APIs */,
+				69C7F09D29BD79080036938C /* MovieDetails */,
+				69C7F09C29BD78F70036938C /* MoviesList */,
+				69CF08B029B31A7900D1DAF0 /* Info.plist */,
+				69A2923F29B308C600898782 /* HusqvarnaApp.swift */,
+				69A2924329B308C800898782 /* Assets.xcassets */,
+				69A2924529B308C800898782 /* Preview Content */,
+			);
+			path = Husqvarna;
+			sourceTree = "<group>";
+		};
+		69A2924529B308C800898782 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				69A2924629B308C800898782 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		69A2924F29B308C800898782 /* HusqvarnaTests */ = {
+			isa = PBXGroup;
+			children = (
+				69A2925029B308C800898782 /* HusqvarnaTests.swift */,
+				69C7F0C429BDCAE60036938C /* HomeViewModelTests.swift */,
+				69C7F0C629BDFE130036938C /* MockMoviesService.swift */,
+			);
+			path = HusqvarnaTests;
+			sourceTree = "<group>";
+		};
+		69A2925929B308C800898782 /* HusqvarnaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				69A2925A29B308C800898782 /* HusqvarnaUITests.swift */,
+				69A2925C29B308C800898782 /* HusqvarnaUITestsLaunchTests.swift */,
+			);
+			path = HusqvarnaUITests;
+			sourceTree = "<group>";
+		};
+		69C7F09C29BD78F70036938C /* MoviesList */ = {
+			isa = PBXGroup;
+			children = (
+				69C7F0A129BD794A0036938C /* View */,
+				69C7F0A029BD793B0036938C /* ViewModel */,
+			);
+			path = MoviesList;
+			sourceTree = "<group>";
+		};
+		69C7F09D29BD79080036938C /* MovieDetails */ = {
+			isa = PBXGroup;
+			children = (
+				69C7F09F29BD79170036938C /* ViewModel */,
+				69C7F09E29BD79120036938C /* View */,
+			);
+			path = MovieDetails;
+			sourceTree = "<group>";
+		};
+		69C7F09E29BD79120036938C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69C7F09829BCBE980036938C /* MovieDetailsView.swift */,
+				69C7F0B729BDAD4F0036938C /* MovieDescriptionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69C7F09F29BD79170036938C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				69C7F09A29BCBEB60036938C /* MovieDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		69C7F0A029BD793B0036938C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				69CF08AE29B319A400D1DAF0 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		69C7F0A129BD794A0036938C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69A2924129B308C600898782 /* HomeView.swift */,
+				69C7F0A329BDA1E60036938C /* TopRatedMoviesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69C7F0A229BD79BF0036938C /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				69C7F0AF29BDA6E20036938C /* Service */,
+				69C7F0A529BDA3C80036938C /* Models */,
+				69CF08AC29B3197400D1DAF0 /* APIEndpoints.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		69C7F0A529BDA3C80036938C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				69C7F0A929BDA4A70036938C /* Configuration.swift */,
+				69C7F0AB29BDA50B0036938C /* MovieDetails.swift */,
+				69C7F0AD29BDA5BF0036938C /* MovieList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		69C7F0A629BDA4460036938C /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				69C7F0A729BDA4690036938C /* AppConfiguration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		69C7F0AF29BDA6E20036938C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				69C7F0B029BDA7000036938C /* MoviesServiceable.swift */,
+				69C7F0B229BDA76A0036938C /* MoviesService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		69C7F0B429BDAB980036938C /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				69C7F0B529BDABAF0036938C /* AppEnvironment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		69C7F0B929BDBE7D0036938C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				69C7F0BA29BDBE960036938C /* ImageLoaderService.swift */,
+				691B219329BE3E5E0071DA69 /* Constants.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		69C7F0BC29BDBF060036938C /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				69C7F0BD29BDBF370036938C /* RemoteImageView.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		7EA268F1BE1E79DBED4E1AA7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A60A61C47612647AEB112498 /* Pods-Husqvarna.debug.xcconfig */,
+				8520342EC5AC001854487849 /* Pods-Husqvarna.release.xcconfig */,
+				BE4475D5FE383A2D291682E1 /* Pods-Husqvarna-HusqvarnaUITests.debug.xcconfig */,
+				A2CE332AC341223C99E98EED /* Pods-Husqvarna-HusqvarnaUITests.release.xcconfig */,
+				C55FD6EBAFF084D5972C89B5 /* Pods-HusqvarnaTests.debug.xcconfig */,
+				71883273770A89A0003BD967 /* Pods-HusqvarnaTests.release.xcconfig */,
+				685AE36BDDD55B4ADECC2B4C /* Pods-HusqvarnaUITests.debug.xcconfig */,
+				074F4C3D0A7B5545DE0DFD09 /* Pods-HusqvarnaUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CD3695DC6DA80F93765AF13C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3526AAE880A245F5853D89B1 /* Pods_Husqvarna.framework */,
+				8E16A6048934B045D5B2A5AA /* libPods-HusqvarnaTests.a */,
+				9C6EE9188B92CFC7B6D21697 /* libPods-HusqvarnaUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69A2923B29B308C600898782 /* Husqvarna */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69A2926029B308C800898782 /* Build configuration list for PBXNativeTarget "Husqvarna" */;
+			buildPhases = (
+				C9FE85122AE0EA4A1A7887C3 /* [CP] Check Pods Manifest.lock */,
+				69A2923829B308C600898782 /* Sources */,
+				69A2923929B308C600898782 /* Frameworks */,
+				69A2923A29B308C600898782 /* Resources */,
+				A7A2BBEFCFCA9AD1DE46BB62 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Husqvarna;
+			productName = Husqvarna;
+			productReference = 69A2923C29B308C600898782 /* Husqvarna.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69A2924B29B308C800898782 /* HusqvarnaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69A2926329B308C800898782 /* Build configuration list for PBXNativeTarget "HusqvarnaTests" */;
+			buildPhases = (
+				2FE8D068B3ED02B16A4B6BFD /* [CP] Check Pods Manifest.lock */,
+				69A2924829B308C800898782 /* Sources */,
+				69A2924929B308C800898782 /* Frameworks */,
+				69A2924A29B308C800898782 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69A2924E29B308C800898782 /* PBXTargetDependency */,
+			);
+			name = HusqvarnaTests;
+			productName = HusqvarnaTests;
+			productReference = 69A2924C29B308C800898782 /* HusqvarnaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		69A2925529B308C800898782 /* HusqvarnaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69A2926629B308C800898782 /* Build configuration list for PBXNativeTarget "HusqvarnaUITests" */;
+			buildPhases = (
+				702034252F1A260376FBEF1A /* [CP] Check Pods Manifest.lock */,
+				69A2925229B308C800898782 /* Sources */,
+				69A2925329B308C800898782 /* Frameworks */,
+				69A2925429B308C800898782 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69A2925829B308C800898782 /* PBXTargetDependency */,
+			);
+			name = HusqvarnaUITests;
+			productName = HusqvarnaUITests;
+			productReference = 69A2925629B308C800898782 /* HusqvarnaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69A2923429B308C600898782 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					69A2923B29B308C600898782 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					69A2924B29B308C800898782 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 69A2923B29B308C600898782;
+					};
+					69A2925529B308C800898782 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 69A2923B29B308C600898782;
+					};
+				};
+			};
+			buildConfigurationList = 69A2923729B308C600898782 /* Build configuration list for PBXProject "Husqvarna" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69A2923329B308C600898782;
+			productRefGroup = 69A2923D29B308C600898782 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69A2923B29B308C600898782 /* Husqvarna */,
+				69A2924B29B308C800898782 /* HusqvarnaTests */,
+				69A2925529B308C800898782 /* HusqvarnaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69A2923A29B308C600898782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69A2924729B308C800898782 /* Preview Assets.xcassets in Resources */,
+				691B219729BE432F0071DA69 /* Localizable.strings in Resources */,
+				69A2924429B308C800898782 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69A2924A29B308C800898782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69A2925429B308C800898782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FE8D068B3ED02B16A4B6BFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HusqvarnaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		702034252F1A260376FBEF1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HusqvarnaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7A2BBEFCFCA9AD1DE46BB62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Husqvarna/Pods-Husqvarna-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Husqvarna/Pods-Husqvarna-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Husqvarna/Pods-Husqvarna-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9FE85122AE0EA4A1A7887C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Husqvarna-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69A2923829B308C600898782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69CF08AD29B3197400D1DAF0 /* APIEndpoints.swift in Sources */,
+				691B219429BE3E5E0071DA69 /* Constants.swift in Sources */,
+				69C7F0BE29BDBF370036938C /* RemoteImageView.swift in Sources */,
+				69A2924229B308C600898782 /* HomeView.swift in Sources */,
+				691B219229BE3B1B0071DA69 /* SettingsView.swift in Sources */,
+				69C7F0A829BDA4690036938C /* AppConfiguration.swift in Sources */,
+				69C7F0AC29BDA50B0036938C /* MovieDetails.swift in Sources */,
+				69C7F0AA29BDA4A70036938C /* Configuration.swift in Sources */,
+				69C7F0AE29BDA5BF0036938C /* MovieList.swift in Sources */,
+				69C7F0B129BDA7000036938C /* MoviesServiceable.swift in Sources */,
+				69C7F0B629BDABAF0036938C /* AppEnvironment.swift in Sources */,
+				69C7F09B29BCBEB60036938C /* MovieDetailsViewModel.swift in Sources */,
+				69C7F0A429BDA1E60036938C /* TopRatedMoviesView.swift in Sources */,
+				69A2924029B308C600898782 /* HusqvarnaApp.swift in Sources */,
+				69C7F0B329BDA76A0036938C /* MoviesService.swift in Sources */,
+				69CF08AF29B319A400D1DAF0 /* HomeViewModel.swift in Sources */,
+				69C7F09929BCBE980036938C /* MovieDetailsView.swift in Sources */,
+				69C7F0BB29BDBE960036938C /* ImageLoaderService.swift in Sources */,
+				69C7F0B829BDAD4F0036938C /* MovieDescriptionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69A2924829B308C800898782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69A2925129B308C800898782 /* HusqvarnaTests.swift in Sources */,
+				69C7F0C729BDFE130036938C /* MockMoviesService.swift in Sources */,
+				69C7F0C529BDCAE60036938C /* HomeViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69A2925229B308C800898782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69A2925D29B308C800898782 /* HusqvarnaUITestsLaunchTests.swift in Sources */,
+				69A2925B29B308C800898782 /* HusqvarnaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69A2924E29B308C800898782 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69A2923B29B308C600898782 /* Husqvarna */;
+			targetProxy = 69A2924D29B308C800898782 /* PBXContainerItemProxy */;
+		};
+		69A2925829B308C800898782 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69A2923B29B308C600898782 /* Husqvarna */;
+			targetProxy = 69A2925729B308C800898782 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		691B219929BE432F0071DA69 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				691B219829BE432F0071DA69 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69A2925E29B308C800898782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		69A2925F29B308C800898782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69A2926129B308C800898782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A60A61C47612647AEB112498 /* Pods-Husqvarna.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Husqvarna/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Husqvarna/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Husqvarna;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		69A2926229B308C800898782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8520342EC5AC001854487849 /* Pods-Husqvarna.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Husqvarna/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Husqvarna/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Husqvarna;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		69A2926429B308C800898782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C55FD6EBAFF084D5972C89B5 /* Pods-HusqvarnaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.HusqvarnaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Husqvarna.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Husqvarna";
+			};
+			name = Debug;
+		};
+		69A2926529B308C800898782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71883273770A89A0003BD967 /* Pods-HusqvarnaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.HusqvarnaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Husqvarna.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Husqvarna";
+			};
+			name = Release;
+		};
+		69A2926729B308C800898782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 685AE36BDDD55B4ADECC2B4C /* Pods-HusqvarnaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.HusqvarnaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Husqvarna;
+			};
+			name = Debug;
+		};
+		69A2926829B308C800898782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 074F4C3D0A7B5545DE0DFD09 /* Pods-HusqvarnaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.HusqvarnaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Husqvarna;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69A2923729B308C600898782 /* Build configuration list for PBXProject "Husqvarna" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69A2925E29B308C800898782 /* Debug */,
+				69A2925F29B308C800898782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69A2926029B308C800898782 /* Build configuration list for PBXNativeTarget "Husqvarna" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69A2926129B308C800898782 /* Debug */,
+				69A2926229B308C800898782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69A2926329B308C800898782 /* Build configuration list for PBXNativeTarget "HusqvarnaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69A2926429B308C800898782 /* Debug */,
+				69A2926529B308C800898782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69A2926629B308C800898782 /* Build configuration list for PBXNativeTarget "HusqvarnaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69A2926729B308C800898782 /* Debug */,
+				69A2926829B308C800898782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69A2923429B308C600898782 /* Project object */;
+}
