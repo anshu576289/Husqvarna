@@ -1,0 +1,6 @@
+framework module Pods_HusqvarnaTests {
+  umbrella header "Pods-HusqvarnaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

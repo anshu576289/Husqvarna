@@ -1,0 +1,21 @@
+PODS:
+  - Network (0.1.0)
+  - Utilities (0.1.0)
+
+DEPENDENCIES:
+  - Network (from `DevPods/Network`)
+  - Utilities (from `DevPods/Utilities`)
+
+EXTERNAL SOURCES:
+  Network:
+    :path: DevPods/Network
+  Utilities:
+    :path: DevPods/Utilities
+
+SPEC CHECKSUMS:
+  Network: 3608a755555d1597190a9ab54dd49b8cb6f6b95c
+  Utilities: 395e132cc5a1beb5ad38e0926f937d3c912be5f6
+
+PODFILE CHECKSUM: 8d15998e3cd5585fadbeda8969394e406c4ea525
+
+COCOAPODS: 1.11.3
