@@ -26,7 +26,9 @@ Version Support: iOS 14+
 Unit Test added but would want more time to increase the coverage.
 
 Steps to Run:
--> Clone the Project & do a pod install.
--> Go to the root directory of project and run Husqvarna.workspace.xcworkspace in Xcode.
--> Select scheme Husqvarna and run the project.
+1: Clone the Project, go to the root directory & do a pod install.
+2: Go to the root directory of project and run Husqvarna.workspace.xcworkspace in Xcode.
+3: Select scheme Husqvarna and run the project.
+4: If step 3 fails, go to the root directory and run pod install command.
+5: Do step 3.
 
