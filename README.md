@@ -1,6 +1,6 @@
 # Husqvarna
 
-Features Added:
+`Features Added:`
  -> Top 10 Movies.
  -> Movie Details
  -> Tab Bar with empty implementation of Account, Favorites, Downloads, Settings
@@ -21,14 +21,16 @@ Husqvarna, Network, Utilities
 
 <img width="267" alt="Screenshot 2023-03-13 at 8 25 48 AM" src="https://user-images.githubusercontent.com/102992701/224597872-a0a4feb1-5a55-497a-b1f2-bcd4fd3446a4.png">
 
-Dependency Manager used: Cocoapods
-Version Support: iOS 14+
-Unit Test added but would want more time to increase the coverage.
+Dependency Manager used: `Cocoapods`
+
+Version Support: `iOS 14+`
+
+`Unit Tests added but would want more time to increase the coverage.`
 
 Steps to Run:
-1: Clone the Project, go to the root directory & do a pod install.
-2: Go to the root directory of project and run Husqvarna.workspace.xcworkspace in Xcode.
-3: Select scheme Husqvarna and run the project.
-4: If step 3 fails, go to the root directory and run pod install command.
+1: Clone the Project, go to the root directory & do a `pod install`.
+2: Go to the root directory of project and run `Husqvarna.workspace.xcworkspace` in Xcode.
+3: Select scheme `Husqvarna` and run the project.
+4: If step 3 fails, go to the root directory and run `pod install` command.
 5: Do step 3.
 
